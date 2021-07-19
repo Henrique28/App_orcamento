@@ -54,20 +54,18 @@
         <div class="row mb-3">
             <div class="col-md-2">
                 <div class="form-group">
-                    <select class="form-select">
-                        <option selected>Ano</option>
-                        <option value="1">2021</option>
-                        <option value="2">2020</option>
-                        <option value="3">2019</option>
-                        <option value="4">2018</option>
+                    <select class="form-select" id="ano">
+                        <option value="" selected>Ano</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
                     </select>
                 </div>
             </div>
 
             <div class="col-md-2">
                 <div class="form-group">
-                    <select class="form-select">
-                        <option selected>Mês</option>
+                    <select class="form-select" id="mes">
+                        <option value="" selected>Mês</option>
                         <option value="1">Janeiro</option>
                         <option value="2">Fevereiro</option>
                         <option value="3">Março</option>
@@ -86,14 +84,14 @@
 
             <div class="col-md-2">
                 <div class="form-group">
-                    <input type="number" class="form-control" placeholder="Dia">
+                    <input type="number" class="form-control" placeholder="Dia" id="dia">
                 </div>
             </div>
 
             <div class="col-md-6">
                 <div class="form-group">
-                    <select class="form-select">
-                        <option selected>Tipo</option>
+                    <select class="form-select" id="tipo">
+                        <option value="" selected>Tipo</option>
                         <option value="1">Alimentação</option>
                         <option value="2">Educação</option>
                         <option value="3">Lazer</option>
@@ -109,18 +107,20 @@
 
             <div class="col-md-8">
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Descrição">
+                    <input type="text" class="form-control" placeholder="Descrição" id="descricao">
                 </div>
             </div>
 
             <div class="col-md-2">
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Valor">
+                    <input type="text" class="form-control" placeholder="Valor" id="valor">
                 </div>
             </div>
-
+            
             <div class="col-md-2 d-flex justify-content-end">
-                <button type="button" class="btn btn-primary">
+
+                <!-- Botão para pesquisa de despesas -->
+                <button type="button" class="btn btn-primary" onclick="pesquisarDespesa()">
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </button>
             </div>
@@ -140,10 +140,9 @@
                         </tr>
                     </thead>
     
-                    <tbody><!-- Inserção atraves do JavaScript -->
+                    <tbody id="listaDespesas" ><!-- Inserção atraves do JavaScript -->
     
-                    </tbody>
-    
+                    </tbody>    
                 </table>
             </div>
         </div>
