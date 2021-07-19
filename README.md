@@ -21,7 +21,7 @@ Conteúdos
 ## Sobre o projeto
 
 Projeto com o intuito de cadastrar e consultar todas as despesas do cliente
-facilando a visulaização do seus gastos em determinado periodo
+facilando a visualização do seus gastos em determinado periodo
 
 ## Funcionalidades
 
